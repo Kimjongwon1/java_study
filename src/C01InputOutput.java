@@ -11,9 +11,9 @@ public class C01InputOutput {
 //      문자열과 숫자를 합하면 = 문자
 //        System.out.println(my_string+a);
 //        숫자와 숫자를 더하면 더하기 연산이 된다.
-//        System.out.println(10+20);
+//      System.out.println(10+20);
 //      입력 : System.in(키보드 입력) + Scanner(입력을 위한 클래스)
-        Scanner myScan = new Scanner(System.in);
+//        Scanner myScan = new Scanner(System.in);
 //        System.out.println("아무 문자열이나 입력하시오");
 ////      nextLine은 입력받은 데이터를 한 줄 읽어서 String 형식으로 리턴
 //        String inputs = myScan.nextLine();
