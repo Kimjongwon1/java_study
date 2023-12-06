@@ -30,12 +30,12 @@ public class C05LoopPractice {
         int maxNum =0;
         for(int i=1; i<=ans;i++){
             if((a%i == 0) && (b%i == 0)){
-                maxNum = a;
+                maxNum = i;
             }
         }
-        System.out.println(ans);
+        System.out.println(maxNum);
 
-        int minNum = a/maxNum * b/maxNum;
+//        int minNum = a/maxNum * b/maxNum;
 
     }
 }
