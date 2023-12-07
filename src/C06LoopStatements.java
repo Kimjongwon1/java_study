@@ -139,13 +139,29 @@ public class C06LoopStatements {
 //            }
 //        }
 //       2중for문을 통해 배열 접근
-        int[][] arr = {{1,2,3,4,5},{5,6,7,8,9}};
-//        System.out.println(arr[0][1]);
-        for(int i=0; i<2; i++){
-            for (int j=0; j<5; j++){
-                System.out.println(arr[i][j]);
+//        int[][] arr = {{1,2,3,4,5},{5,6,7,8,9}};
+////        System.out.println(arr[0][1]);
+//        for(int i=0; i<2; i++){
+//            for (int j=0; j<5; j++){
+//                System.out.println(arr[i][j]);
+//            }
+//        }
+
+//        라벨문
+        loop1:
+        for(int i =0; i<5;i++){
+            loop2:
+            for(int j=0; j<5; j++){
+                System.out.println("hello world");
+                if(j==2){
+                    break; //15번
+                    // break loop1; //3번
+                }
+
             }
         }
+//        라벨문 활용
+
     }
 }
 //        while
