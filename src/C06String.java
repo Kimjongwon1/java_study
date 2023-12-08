@@ -7,6 +7,7 @@ import java.util.regex.Pattern;
 public class C06String {
     public static void main(String[] args) {
 
+
 //        String a = "hello";
 //        String b = "hello";
 //        boolean c = (a==b);
@@ -31,6 +32,7 @@ public class C06String {
 //        int a = 10;
 //        String st_a = Integer.toString(a); //"10"
 ////        int c = st_a; <-그냥 담으면 에러남
+//        String st_a2 = String.valueOf(a);
 //        int c = Integer.parseInt(st_a);   // 10
 
 //        참조자료형에 원시자료형을 담을 때는 wrapper클래스를 써야함 ex)컬렉션 프레임 워크(List,set...)
@@ -164,7 +166,7 @@ public class C06String {
 //        System.out.println(st3);
 
 //
-        String str = "012abcAB한글한글김한글df234";
+//        String str = "012abcAB한글한글김한글df234";
 ////        [a-z] 소문자 알파벳 [A-Z] 대문자 알파벳
 ////        [가-힣] 한글
 //        String hg = str.replaceAll("[a-z]","");
@@ -219,17 +221,132 @@ public class C06String {
 //        System.out.println(Arrays.toString(strArr3));
 
 //        isEmpty와 null
-        String st1 = null;
-        String st2 = "";
+//        String st1 = null;
+//        String st2 = "";
+//
+//        System.out.println(st1 == null);
+//        System.out.println(st2 == null);
+//        System.out.println(st2.isEmpty());
+////        nullPointer Exception 예외 발생
+//        System.out.println(st1.isEmpty());
+//
+//        String[] arr = new String[5];
+//        arr[0] = "hello";
+//        arr[1] = "world";
 
-        System.out.println(st1 == null);
-        System.out.println(st2 == null);
-        System.out.println(st2.isEmpty());
-//        nullPointer Exception 예외 발생
-        System.out.println(st1.isEmpty());
-        
-        String[] arr = new String[5];
-        arr[0] = "hello";
-        arr[1] = "world";
+//        join : String[] ->String
+//        String [] strArr = {"java","c","c++"};
+////        1)배열선언 2)랭귀지 나열 3)join:공백하나로 4)출력
+//        System.out.println(String.join(" ",strArr));
+
+//        StringBuffer
+//        String st1 = "hello";
+//        StringBuffer sb1 = new StringBuffer(st1);
+//        System.out.println(sb1);//stringbuffer 값
+//        String new1 = sb1.toString();
+//        System.out.println(new1);//string 값
+//        sb1.append(" world");
+//        System.out.println(sb1);
+//
+////        Hello javaworld
+//        sb1.insert(6,"java ");
+//        System.out.println(sb1);
+//        System.out.println(sb1.substring(6,10));
+//        sb1.delete(6,10);
+//        System.out.println(sb1);
+
+//        stringbuilder  성능 StringBuffer보다 좋다(스레스 safe 안됨)
+//        StringBuilder sb2 = new StringBuilder("hello");
+//        sb2.append(" world");
+//        System.out.println(sb2);
+
+//        프로그래머스 문자 반복출력하기
+//        StringBuilder sb = new StringBuilder();
+//        for(int i = 0; i<my_string.length();i++){
+//            for(int j=0; j<n;j++){
+//                sb.append(my_string.charAt(i));
+//            }
+//        }
+//        String answer = sb.toString();
+//            내가푼거
+//        StringBuilder sb = new StringBuilder();
+//        for (int i = 0; i < my_string.length(); i++) {
+//            for (int j = 0; j < n; j++) {
+//                sb.insert(sb.length(), my_string.charAt(i));
+//            }
+//        }
+//        String answer = sb.toString();
+//        return answer;
+//    }
+
+//        문자열 밀기( 다시 풀기/ 생각 다듬기)
+//        String st1 = A;
+//        int result = 0;
+//        int answer = result;
+//        StringBuilder sb1 = new StringBuilder(st1);
+//        for(int i =0; i<100;i++){
+//            sb1.insert(i,sb1.charAt(i+1));
+//            sb1.delete(sb1.length(i),st1.length(i));
+//            if(sb1 == B){
+//                result = i;
+//            }else{
+//                result=-1;
+//            }
+//
+//        }
+//
+//
+//        return answer;
+//    }
+
+//        하려고 했던거
+
+//        if (A.length() != B.length()) {
+//            return -1; // A와 B의 길이가 다르면 밀 수 없으므로 -1 반환
+//        }
+//
+//        int length = A.length();
+//        StringBuilder sb = new StringBuilder(A);
+//
+//        for (int i = 0; i < length; i++) {
+//            if (sb.toString().equals(B)) {
+//                return i; // A와 B가 같으면 i를 반환 (최소 횟수)
+//            }
+//            // A를 한 칸 오른쪽으로 밀기
+//            sb.insert(0, sb.charAt(length - 1));
+//            sb.deleteCharAt(length);
+//        }
+//
+//        return -1; // A를 밀어도 B가 되지 않는 경우 -1 반환
+//    }
+
+//          강사님
+//        String A = "hello";
+//        String B = "ohell";
+//
+////        int answer = 0;
+//        StringBuilder sb = new StringBuilder(A);
+//        while(true){
+//            if(sb.toString().equals(B)){
+//                break;
+//            }
+//
+//            answer++;
+//            sb.insert(0,sb.charAt((A.length()-1)));
+//            sb.delete(sb.length()-1, sb.length());
+//            if(answer>A.length()){
+//                answer = -1;
+//                break;
+//            }
+//        }
+//        int answer = -1;
+//        for(int i=0; i<A.length(); i++){
+//            if(sb.toString().equals(B)){
+//                answer = i;
+//                break;
+//            }
+//            sb.insert(0,sb.charAt((A.length()-1)));
+//            sb.delete(sb.length()-1, sb.length());
+//        }
     }
 }
