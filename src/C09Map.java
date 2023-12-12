@@ -3,10 +3,10 @@ import java.util.*;
 public class C09Map {
     public static void main(String[] args) {
 //        String, String -> map 데이터 insert와 순서가 상관없다.
-//        Map<String,String> myMap = new HashMap<>();
-//        myMap.put("basketball", "농구");
-//        myMap.put("soccer", "축구");
-//        myMap.put("baseball", "야구");
+        Map<String,String> myMap = new HashMap<>();
+        myMap.put("basketball", "농구");
+        myMap.put("soccer", "축구");
+        myMap.put("baseball", "야구");
 //        System.out.println(myMap);
 //        System.out.println(myMap.get("basketball"));
 ////        전체개수 : size(); , isEmpty();
@@ -18,12 +18,12 @@ public class C09Map {
 //        System.out.println(myMap.containsKey("tennis"));
 //        myMap.remove("baseball");
 //
-//        System.out.println(myMap.keySet());
-//        System.out.println(myMap.values());
-////        enhanced for : key값 하나씩 출력.
-//        for(String i : myMap.keySet()){
-//            System.out.println(i);
-//        }
+        System.out.println(myMap.keySet());
+        System.out.println(myMap.values());
+//        enhanced for : key값 하나씩 출력.
+        for(String i : myMap.keySet()){
+            System.out.println(i);
+        }
 
 //        Map<String,String> myMap = new HashMap<>();
 //        myMap.put("basketball", "농구");
@@ -44,25 +44,25 @@ public class C09Map {
 //        }
 
 //        아래의 리스트를 가지고 좋아하는 운동종목과 사람숫자를 map형태로 나타내시오
-        List<String> myList = new ArrayList<>();
-        Map<String,Integer> myMap = new HashMap<>();
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("basketball");
-        myList.add("tennis");
-        myList.add("tennis");
-        myList.add("tennis");
-        for(String a : myList){
+//        List<String> myList = new ArrayList<>();
+//        Map<String,Integer> myMap = new HashMap<>();
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("basketball");
+//        myList.add("tennis");
+//        myList.add("tennis");
+//        myList.add("tennis");
+//        for(String a : myList){
 //            if(myMap.containsKey(a)){
 //                myMap.put(a,myMap.get(a)+1);
 //            }else{
 //                myMap.put(a,1);
 //            }
-            myMap.put(a, myMap.getOrDefault(a, 0)+1);
-        }
-        System.out.println(myMap);
+////            myMap.put(a, myMap.getOrDefault(a, 0)+1);
+//        }
+//        System.out.println(myMap);
 
 //        String answer = "";
 //        List<String> myList = new ArrayList<>();
