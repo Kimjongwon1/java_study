@@ -64,21 +64,21 @@ public class C09Map {
         }
         System.out.println(myMap);
 
-        String answer = "";
-        List<String> myList = new ArrayList<>();
-        Map<String,Integer> myMap = new HashMap<>();
-        for(int i = 0 ; i<participant.length;i++){
-            for(int j=0; j<completion.length;j++){
-                if(participant[i] != completion[j]){
-                    myList.add("participant[i]"");
-                }
-            }
-        }
-        for(String a : myList){
-            myMap.put(a, myMap.getOrDefault(a, 0)+1);
-        }
-        return answer;
-    }
+//        String answer = "";
+//        List<String> myList = new ArrayList<>();
+//        Map<String,Integer> myMap = new HashMap<>();
+//        for(int i = 0 ; i<participant.length;i++){
+//            for(int j=0; j<completion.length;j++){
+//                if(participant[i] != completion[j]){
+//                    myList.add("participant[i]"");
+//                }
+//            }
+//        }
+//        for(String a : myList){
+//            myMap.put(a, myMap.getOrDefault(a, 0)+1);
+//        }
+//        return answer;
+//    }
 
         }
     }
