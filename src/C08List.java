@@ -114,6 +114,8 @@ public class C08List {
 //        List<int[]> myList = new ArrayList<>();
 //        myList.add(new int[3]);
 //        myList.add(new int[3]);
+//        myList.add(new int[]{1,2,3});
+//        myList.add(new ArrayList<>(Arrays.asList(1,2,3));
 //        myList.add(new int[3]);
 ////        위 list에 값, 1,2,3 10,20,30 ,100,200,300
 //        int n = 1;
