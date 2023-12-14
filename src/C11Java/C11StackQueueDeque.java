@@ -1,7 +1,9 @@
+package C11Java;
+
 import java.util.*;
 import java.util.concurrent.ArrayBlockingQueue;
 
-public class C11StackQueue {
+public class C11StackQueueDeque {
     public static void main(String[] args) {
 //        Stack<Integer> mySt = new Stack<>();
 //        mySt.push(10);
@@ -96,7 +98,7 @@ public class C11StackQueue {
 //        }
 
 //        길이의 제한이 있는 Queue : arrayBlockingQueue;
-        Queue<String> limit = new ArrayBlockingQueue<>(3);
+//        Queue<String> limit = new ArrayBlockingQueue<>(3);
 //        offer 와 add의 차이
 //        add는 길이가 다 찼을때 error 발생, offer는 공간이 충분할때만 add
 //        limit.add("hello1");
@@ -142,44 +144,43 @@ public class C11StackQueue {
 //        }System.out.println(answer);
 
 
-
-//        public static void main(String[] args) {
-//            int[] scoville = {1, 2, 3, 9, 10, 12};
-//            int K = 7;
-//            int result = solution(scoville, K);
-//            System.out.println("최소 횟수: " + result);
+//
+//        PriorityQueue<Integer> pq = new PriorityQueue<>();
+//        for (int s : scoville) {
+//            pq.add(s);
 //        }
 //
-//
-//            PriorityQueue<Integer> pq = new PriorityQueue<>();
-//
-//            // PriorityQueue에 scoville 배열 추가
-//            for (int s : scoville) {
-//                pq.add(s);
+//        int count = 0;
+//        int ans = 0;
+//        while (pq.size() > 1) {
+//            if (pq.peek() >= K) {
+//               ans=count;
 //            }
 //
-//            int count = 0;
+//            int first = pq.poll();
+//            int second = pq.poll();
+//            int mixed = first + (second * 2); // 두 음식을 섞은 후의 스코빌 지수 계산
+//            pq.add(mixed);
+//            count++;
+//        }
 //
-//            while (pq.size() > 1) {
-//                // 가장 작은 값이 K 이상이면 모든 음식의 스코빌 지수가 K 이상이므로 반복 종료
-//                if (pq.peek() >= K) {
-//                    return count;
-//                }
+//        if (pq.peek() < K) {
+//            count= -1;
+//        }
 //
-//                // 스코빌 지수가 K보다 작은 두 개의 음식을 꺼내서 섞기
-//                pq.add(mixed); // 섞은 음식의 스코빌 지수를 PriorityQueue에 추가
-//                count++;
-//            }
-//
-//            // 모든 음식의 스코빌 지수를 K 이상으로 만들 수 없는 경우
-//            if (pq.peek() < K) {
-//                return -1;
-//            }
-//
-//            return count;
-//
-//
+//        System.out.println(count);
+//      ArrayDeque : 양방향에서 데이터를 삽입/제거 가능 성능이 스택,큐보다 빠름
 
+        Deque<Integer> mydeque = new ArrayDeque<>();
+        mydeque.addFirst(2);
+        mydeque.addFirst(20);
+        System.out.println(mydeque.peekLast());
+        mydeque.addLast(30);
+        System.out.println(mydeque);
+
+        System.out.println(mydeque.pollFirst());
+        System.out.println(mydeque.pollLast());
+        System.out.println(mydeque);
     }
 }
 

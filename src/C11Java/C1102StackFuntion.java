@@ -1,3 +1,5 @@
+package C11Java;
+
 public class C1102StackFuntion {
     public static void main(String[] args) {
         System.out.println("main 함수시작");
