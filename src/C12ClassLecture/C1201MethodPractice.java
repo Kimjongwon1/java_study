@@ -12,7 +12,7 @@ public class C1201MethodPractice {
         if (a <= 1) {
             return false;
         }
-        for (int i = 2; i <= a; i++) {
+        for (int i = 2; i*i <= a; i++) {
             if (a % i == 0) {
                 return false;
             }
@@ -22,7 +22,7 @@ public class C1201MethodPractice {
 //    void 리턴타입 메소드에서도 강제종료를 위해 return 가능
 public static void isprimeprint (int a){
 
-    for (int i = 2; i <= a; i++) {
+    for (int i = 2; i*i<= a; i++) {
         if (a % i == 0) {
             System.out.println("소수아님");
             return;

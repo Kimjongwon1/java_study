@@ -27,7 +27,6 @@ public class C1203Class2 {
 //        user2.email = "hong1@naver.com";
 //        user2.password = "홍길순";
 //        user2.age = 22;
-
         person user3 = new person();
         user3.setName("홍길령");
         user3.setEmail("hong3@naver.com");

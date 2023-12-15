@@ -30,6 +30,7 @@ public class C1202Class {
 
     }
 
+
 //    매개변수2개 받아서 더한값 return sum;
 //    static int Summ(int a, int b){
 //            return a+b;
