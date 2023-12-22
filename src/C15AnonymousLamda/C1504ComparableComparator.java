@@ -54,10 +54,10 @@ public class C1504ComparableComparator {
 //       });
 //        studentList.sort(((o1, o2) -> o1.getAge()- o2.getAge()));
 //        System.out.println(studentList);
-////        이름으로 정렬
+//        이름으로 정렬
 //        studentList.sort((o1,o2)-> o1.getName().compareTo(o2.getName()));
 //        System.out.println(studentList);
-//
+
 //        String[] strArr = {"hello","java","C++","world22"};
 //        Arrays.sort(strArr,((o1, o2) -> o1.length()-o2.length()));
 //        System.out.println(Arrays.toString(strArr));
